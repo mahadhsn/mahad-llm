@@ -2,13 +2,22 @@
 __pycache__/
 *.pyc
 .env
+.venv/
 
 # Node
 node_modules/
 
 # Data & Checkpoints
-training/data/raw/
+training/data/
 training/checkpoints/
+
+# Model artifacts
+*.onnx
+*.safetensors
+*.bin
+*.idx
+*.pt
+logs/
 
 # Mac
 .DS_Store
