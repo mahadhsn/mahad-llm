@@ -41,7 +41,7 @@ class MiniLM(nn.Module):
         # embeddings
         x = self.tok_emb(input_ids) + self.pos_emb(pos)
         
-        # project to vocab
+        # project to vocab 
         x = self.ln_f(x)
         logits = self.head(x)
         return logits
